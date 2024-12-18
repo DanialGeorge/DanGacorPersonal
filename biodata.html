@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> <!-- Stylish font -->
+    <style>
+        /* General Body Styling */
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            margin: 0; 
+            background-color: #121212; /* Dark background */
+            color: #fff; /* Light text */
+            line-height: 1.6; 
+            overflow-x: hidden;
+        }
+
+        /* Header & Footer Styling */
+        header, footer { 
+            background-color: #1f1f1f; 
+            color: #00b0ff; /* Cyberpunk blue */
+            text-align: center; 
+            padding: 1rem; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            text-transform: uppercase;
+        }
+
+        /* Navigation Links Styling */
+        nav a { 
+            text-decoration: none; 
+            color: #f50057; /* Neon pink */
+            padding: 1rem; 
+            display: inline-block; 
+            background: #333; 
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover { 
+            background-color: #f50057; 
+            color: #121212;
+        }
+
+        /* Section Styling */
+        section { 
+            padding: 2rem; 
+            background-color: #222; 
+            margin: 1rem auto; 
+            max-width: 900px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+            border: 2px solid #f50057; /* Neon pink border */
+        }
+
+        h2 {
+            color: #f50057; /* Neon pink */
+            text-shadow: 0 0 10px rgba(245, 0, 87, 0.8), 0 0 20px rgba(245, 0, 87, 0.8);
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 1rem;
+        }
+
+        table, th, td { 
+            border: 1px solid #ddd; 
+            text-align: center; 
+        }
+
+        th { 
+            background-color: #0078d7; 
+            color: #fff; 
+            padding: 1rem;
+        }
+
+        td { 
+            padding: 0.8rem; 
+            color: #f0f0f0; 
+        }
+
+        /* Table Styling */
+        table { 
+            border: 2px solid #f50057; /* Neon pink border */
+            border-radius: 8px;
+        }
+
+        /* Photo Box Styling */
+        .image-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .image-box {
+            flex: 1;
+            min-width: 200px;
+            max-width: 220px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-box p {
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* Special Styling for Footer */
+        footer {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Biodata</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="video.html">My Video</a>
+        <a href="comments.html">Your Comments</a>
+    </nav>
+    <section>
+        <!-- Two Photo Boxes -->
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/IMG_2111.HEIC" alt="Picture of Me">
+                <p>Picture of me on left burning the hornet's nest with my colleague on (right private scoot)</p>
+            </div>
+            <div class="image-box">
+                <img src="images/IMG_3273.JPG" alt="Motorcycle Passion">
+                <p>me and my colleague catching snake that has been reported to eat the cats of the reporter</p>
+            </div>
+        </div>
+
+        <h2>My Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>8:00 AM - 4:00 PM / 4:00 PM - 12:00 AM</td>
+                <td>Classes / Work</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>2:00 PM - 4:00 PM / 4:00 PM - 12:00 AM</td>
+                <td>Classes / Work</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 AM - 4:00 PM / 12:00 PM - 8:00 AM</td>
+                <td>Classes / Work</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Classes</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>4:00 PM - 12:00 AM</td>
+                <td>Work</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>5:00 AM - 7:00 AM / 12:00 PM - 5:00 AM</td>
+                <td>Sports / Entertainment</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>8:00 AM - 4:00 PM</td>
+                <td>Work / Personal Time</td>
+            </tr>
+        </table>
+        <p style="margin-top: 1.5rem;">This is my weekly timetable that outlines my primary activities for each day. I ensure to balance my academic, work as a medic and rescuer, and personal time to stay productive while maintaining a work-life balance.</p>
+    </section>
+    <footer>&copy; 2024 DAN GACOR. All Rights Reserved.</footer>
+</body>
+</html>

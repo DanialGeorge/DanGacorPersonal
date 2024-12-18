@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Comments</title>
+    <!-- Link to Google Font Orbitron for Cyberpunk style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            margin: 0; 
+            background-color: #121212; /* Dark background */
+            color: #fff; /* Light text */
+            line-height: 1.6;
+        }
+
+        /* Header and Footer Styling */
+        header, footer { 
+            background-color: #1f1f1f; 
+            color: #00b0ff; /* Neon blue */
+            text-align: center; 
+            padding: 1rem; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            text-transform: uppercase;
+        }
+
+        /* Navigation Links Styling */
+        nav a { 
+            text-decoration: none; 
+            color: #f50057; /* Neon pink */
+            padding: 1rem; 
+            display: inline-block; 
+            background: #333; 
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover { 
+            background-color: #f50057; 
+            color: #121212;
+        }
+
+        /* Section Styling */
+        section { 
+            padding: 2rem; 
+            background-color: #222; 
+            margin: 1rem auto; 
+            max-width: 900px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+            border: 2px solid #f50057; /* Neon pink border */
+            text-align: center;
+        }
+
+        h2 {
+            color: #f50057; /* Neon pink */
+            text-shadow: 0 0 10px rgba(245, 0, 87, 0.8), 0 0 20px rgba(245, 0, 87, 0.8);
+        }
+
+        input, textarea, button { 
+            width: 100%; 
+            padding: 1rem; 
+            margin: 0.5rem 0; 
+            border-radius: 8px;
+            border: 2px solid #00b0ff; /* Neon blue border */
+            background-color: #333; 
+            color: #fff;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #b3b3b3;
+        }
+
+        button {
+            background-color: #00b0ff; 
+            color: #fff; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f50057; 
+            color: #121212;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Comments</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="video.html">My Video</a>
+        <a href="comments.html">Your Comments</a>
+    </nav>
+    <section>
+        <h2>Leave a Comment</h2>
+        <!-- Form that sends data to your email using Formspree -->
+        <form action="https://formspree.io/f/mkgnlkzr" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>&copy; 2024 MOHAMAD DANIAL BIN GEORGE LAM. All Rights Reserved.</footer>
+</body>
+</html>
