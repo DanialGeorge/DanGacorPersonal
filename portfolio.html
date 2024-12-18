@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Google Font Orbitron for Cyberpunk style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
+    <style>
+        /* General body styling */
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            margin: 0; 
+            background-color: #121212; /* Dark background */
+            color: #fff; /* Light text */
+            line-height: 1.6; 
+            overflow-x: hidden;
+        }
+
+        /* Header and Footer Styling */
+        header, footer { 
+            background-color: #1f1f1f; 
+            color: #00b0ff; /* Neon blue */
+            text-align: center; 
+            padding: 1rem; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            text-transform: uppercase;
+        }
+
+        /* Navigation Links Styling */
+        nav a { 
+            text-decoration: none; 
+            color: #f50057; /* Neon pink */
+            padding: 1rem; 
+            display: inline-block; 
+            background: #333; 
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover { 
+            background-color: #f50057; 
+            color: #121212;
+        }
+
+        /* Section Styling */
+        section { 
+            padding: 2rem; 
+            background-color: #222; 
+            margin: 1rem auto; 
+            max-width: 900px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+            border: 2px solid #f50057; /* Neon pink border */
+        }
+
+        h2 {
+            color: #f50057; /* Neon pink */
+            text-shadow: 0 0 10px rgba(245, 0, 87, 0.8), 0 0 20px rgba(245, 0, 87, 0.8);
+        }
+
+        /* List Styling */
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+
+        li { 
+            margin-bottom: 1rem; 
+            color: #ddd; 
+        }
+
+        /* Image Container Styling */
+        .image-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 1rem; 
+            justify-content: center; 
+            margin-top: 2rem; 
+        }
+
+        .image-box { 
+            flex: 1 1 200px; 
+            max-width: 250px; 
+            text-align: center; 
+            margin-bottom: 1rem;
+        }
+
+        .image-box img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            border: 2px solid #ddd; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        }
+
+        .image-box p { 
+            margin-top: 0.5rem; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+            color: #f0f0f0; 
+        }
+
+        /* Footer Styling */
+        footer {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="video.html">My Video</a>
+        <a href="comments.html">Your Comments</a>
+    </nav>
+    <section>
+        <h2>ACHIEVEMENTS</h2>
+        <ul>
+            <li>Won my first autoshow in the MPV category on 14th July 2024.</li>
+            <li>Won my second autoshow in the MPV category on 10th October 2024.</li>
+            <li>Successfully hiked Rinjani Mountain, Lombok, Indonesia (3,726 mdpl) on 31st August 2024.</li>
+            <li>Reached the Kinabalu Summit (4,095 mdpl) for the first time on 9th August 2021.</li>
+            <li>Completed a second Kinabalu Mountain hike (4,095 mdpl) on 20th November 2021.</li>
+            <li>Achieved the "Train the Trainer" qualification by Human Resource Development Malaysia.</li>
+        </ul>
+        
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/IMG_9548.JPG" alt="First Autoshow Win">
+                <p>First Autoshow Win</p>
+            </div>
+            <div class="image-box">
+                <img src="images/IMG_3028.heic" alt="Second Autoshow Win">
+                <p>Second Autoshow Win</p>
+            </div>
+            <div class="image-box">
+                <img src="images/IMG_1140.heic" alt="Rinjani Mountain">
+                <p>The beutiful dewa anjani in lombok</p>
+            </div>
+            <div class="image-box">
+                <img src="images/IMG_3370.JPG" alt="Kinabalu Summit">
+                <p>First Kinabalu Summit</p>
+            </div>
+            <div class="image-box">
+                <img src="images/IMG_3029.HEIC" alt="Second Kinabalu Summit">
+                <p>Second Kinabalu Summit</p>
+            </div>
+            <div class="image-box">
+                <img src="images/photo_2023-10-17_04-44-47.jpg" alt="Train the Trainer Qualification">
+                <p>Train the Trainer Qualification by HRDC</p>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2024 MOHAMAD DANIAL BIN GEORGE LAM. All Rights Reserved.</footer>
+</body>
+</html>
